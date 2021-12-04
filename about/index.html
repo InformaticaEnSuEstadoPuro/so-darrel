@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es" translate="no">
+    <!-- Este sitio requiere JavaScript para funcionar correctamente -->
+    <!-- Este sitio puede no estar optimizado para usarse en ciertos navegadores. Ej: IE o edge legacy -->
+<head>
+  <meta charset="UTF-8"/>
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png"/>
+  <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png"/>
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png"/>
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png"/>
+  <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png"/>
+  <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png"/>
+  <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png"/>
+
+  <meta name="msapplication-config" content="../images/favicon/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#ffffff"/>
+  <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://sodarrel.com"/>
+  <meta property="og:title" content="Acerca de So d'arrel"/>
+  <meta property="og:site_name" content="So d'arrel"/>
+  <meta property="og:locate" content="es_ES"/>
+  <meta property="og:locale:alternate" content="ca_AD"/>
+  <meta property="og:locale:alternate" content="fr_FR"/>
+  <meta property="og:locale:alternate" content="ca_ES"/>
+  <meta property="og:locale:alternate" content="en_US"/>
+  <meta property="og:locale:alternate" content="en_UK"/>
+  <meta property="og:description" content="Este sitio web permite experimentar el pasado sonoro de la población de El Campello a través de una cartografía."/>
+  <meta property="og:image" content="https://sodarrel.com/TEST1/images/preview/about.png"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:url" content="https://sodarrel.com"/>
+  <meta name="twitter:title" content="Acerca de So d'arrel"/>
+  <meta name="twitter:description" content="Este sitio web permite experimentar el pasado sonoro de la población de El Campello a través de una cartografía."/>
+  <meta name="twitter:image" content="https://sodarrel.com/TEST1/images/preview/about.png"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover,user-scalable = no"/>
+  <meta name="title" content="Gallo Rojo — So d'arrel"/>
+  <meta name="description" content="Este sitio web permite experimentar el pasado sonoro de la población de El Campello a través de una cartografía."/>
+  <meta name="author" content="IES Clot de l'Illot"/>
+  <meta name="theme-color" content="#EFD93C"/>
+  <meta name="aplication-name" content="So d'arrel"/>
+
+  <title>Acerca de So d'arrel</title>
+  <link rel="manifest" href="../images/favicon/manifest.webmanifest"/>
+  <link rel="stylesheet" href="../css/about.css"/>  
+</head>
+
+<body>
+        <div class="sidebar_container" id="sidebar_containerId" onclick="closesidebar()"></div>
+        <div id="sidebar_content" tabindex="-1" role="navigation">
+                <div class="sidebar_header">
+                    <button tabindex="-1" aria-label="Cerrar el menú lateral" title="Cerrar el menú lateral" class="closeburger burger_menu" onclick="closesidebar()">
+                        <div class="material-icons-round unselectable">menu</div>
+                    </button>
+                    <li class="lilogoli logoMenuLateral unselectable"><span type="image/svg+xml" class="logo unselectable" alt="logo So D'arrel"></span></li>
+                </div>
+
+            <div class="BigSideContainer">
+                <section class="sidebar_main nonsection">
+                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Volver al mapa de campello" title="Volver al mapa" href="../index.html">
+                        <div class="material-icons-round unselectable icoWidth">map</div>
+                        <p translate="yes">Ir al mapa</p>
+                    </a>
+                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Investigación" title="Investigación" href="../investigacion/index.html">
+                        <div class="material-icons-round unselectable icoWidth">biotech</div>
+                        <p translate="yes">Investigación</p>
+                    </a>
+                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Empresas" translate="yes" title="Empresas" href="../empresas/index.html">
+                        <div class="material-icons-round unselectable icoWidth" translate="no">business</div>
+                        <p lang="es" translate="yes">Empresas</p>
+                    </a>
+                </section>
+                <div class="spaceDiplayFlex"></div>
+                <section class="sidebar_footer nonsection" aria-label="Saber más sobre el proyecto">
+                    <p class="subtitleSection unselectable" translate="yes">Más sobre nosotros</p>
+                    <a tabindex="-1" class="sidebar_common_txt sideselected" aria-label="Acerca de So d'arrel" title="Acerca de So d'arrel" href="../about/index.html">
+                        <div class="material-icons-round unselectable icoWidth">info</div>
+                        <p translate="yes">Acerca de So d'arrel</p>
+                    </a>
+                    <a tabindex="-1" class="instagramButton" aria-label="@so_d_arrel en Instagram" title="@so_d_arrel" href="https://www.instagram.com/so_d_arrel/">
+                        <div class="fa fa-instagram ico_insta icoWidth"></div>
+                        <p>@so_d_arrel en Instagram</p>
+                    </a>
+                </section>
+            </div>
+        </div>
+    
+    <nav tabindex="1" aria-label="Barra superior de navegación">
+        <div>
+            <button tabindex="1" aria-label="Abrir el menú lateral" title="Menú lateral" class="burger_menu" onclick="opensidebar()">
+                <div class="material-icons-round unselectable">menu</div>
+            </button>
+            <a tabindex="2" aria-label="Volver al sitio web del mapa" role="link" title="Volver al mapa" class="homebutton unselectable" href="../index.html">
+                <div class="material-icons-round unselectable">map</div>
+                <span type="image/svg+xml" class="logo lilogo unselectable" alt="logo So D'arrel"></span>
+            </a>
+            <a tabindex="4" aria-label="Investigación" title="Investigación" href="../investigacion/index.html">
+                <div class="material-icons-round unselectable">biotech</div>
+                <p class="iconos_textos" translate="yes">Investigación</p>
+            </a>
+            <a tabindex="5"   aria-label="Empresas" title="Empresas" href="../empresas/index.html">
+                <div class="material-icons-round unselectable">business</div>
+                <p class="iconos_textos" translate="yes">Empresas</p>
+            </a>
+        </div>
+        <div>
+            <a id="navselected" tabindex="6" aria-label="Acerca de So d'arrel" title="Acerca de So d'arrel" href="../about/index.html">
+                <div class="material-icons-round unselectable">info</div>
+                <p class="iconos_textos" translate="yes">Acerca</p>
+            </a>
+            <div tabindex="7" aria-label="Cambiar el idioma de la web. Change language to show" class="flagroup ">
+                <a tabindex="7" class="lista " id="flagES" href="index.html" title="Español"></a>
+                <a tabindex="7" class="lista " id="flagVA" href="index_va.html" title="Valencià"></a> 
+                <a tabindex="7" class="lista " id="flagEN" href="index_en.html" title="English"></a>
+                <a tabindex="7" class="lista " id="flagFR" href="index_fr.html" title="Français"></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="bannerabout" id="bannerabout">
+
+                <div class="bgbanner">
+                    <p class="bannerTitle">
+                        <span class="material-icons-round unselectable big_ico">info</span>
+                        <b>Acerca de So d'arrel</b>
+                    </p>
+                    <div class="fotobg">
+                    </div>
+                </div>
+        </div>
+
+        <div class="bodycontent">
+            <aside>
+                <div class="infotxt">
+                    <img class="logodarrelmini" src="../images/logos/logo.svg" type="image/svg+xml" alt="logo So d'arrel">
+
+                    <div class="linedividerinside"></div>
+
+                    <img class="logoinstimini" src="../images/logos/logo-clot.svg" type="image/svg+xml" alt="logo So d'arrel">
+                    <p>Proyecto creado por IES Clot de l'Illot</p>
+
+                    <div class="linedividerinside2"></div>
+            
+                    <a class="mediainfobuttons" href="https://github.com/InformaticaEnSuEstadoPuro/so-darrel">
+                        <span class="icomedia fa fa-github" aria-hidden="true"></span>
+                        <p class="textbetween">Repositorio GitHub</p>
+                        <div class="material-icons-round unselectable link_arrowtime">navigate_next</div>
+
+                    </a>
+                    <a class="mediainfobuttons" href="https://www.instagram.com/so_d_arrel/"> 
+                        <span class="icomedia fa fa-instagram" aria-hidden="true"></span>
+                        <p class="textbetween">@so_d_arrel</p>
+                        <div class="material-icons-round unselectable link_arrowtime">navigate_next</div>
+
+                    </a>
+                </div>
+
+                <div class="infotxt variant1">
+                    <div class="titile_state_message">
+                       <div class="material-icons-round unselectable">euro_symbol</div> 
+                            <a><b>Asignación económica</b></a>
+                    </div>
+                    <div class="linedividerinside variant1_1"></div>
+                    <p>
+                        Este proyecto ha recibido una asignación económica por parte de la conselleria competente en materia de educación de la Generalitat
+                    </p>
+                </div>
+
+                <div class="infotxt salutacions">
+                    <a>
+                        So d'arrel.
+                        <br>
+                        Hecho con ❤️ desde El Campello.
+                        <br>
+                        &#60;/&#62;
+                    </a>
+                </div>
+            </aside>
+
+            
+
+            <section class="sectioncontent_body">
+                <div>
+                    <a class="subtitlesection">
+                        ¿Qué es So d'arrel?
+                    </a>
+                    <div class="muchotextojaja">
+                        Este proyecto ha consistido en el estudio del paisaje sonoro del pasado del Campello. A partir de fuentes iconográficas, entrevistas y material recogido de la bibliografía existente hemos realizado una recreación y geolocalización de los sonidos más idiosincráticos. 
+                        <br>
+                        <div class="collage">
+                            <img class="fotoembed" alt="Foto 1" type="image/jpg" src="../images/about/About(4).jpg">
+                            <img class="fotoembed" alt="Foto 1" type="image/jpg" src="../images/about/About(2).jpg">
+                            <img class="fotoembed" alt="Foto 1" type="image/jpg" src="../images/about/About(3).jpg">
+                        </div>
+                        <br>
+                        Con el objetivo de mostrarlos en una página WEB.
+                        <br>
+                        <br>
+                        Para poder llevarlo a cabo, el alumnado ha realizado diversas prácticas de grabación, edición y producción sonora, tanto con artistas de cierto renombre como con sus profesores, que también les han guiado para diseñar tanto los paisajes sonoros como ilustraciones basadas en fotografías antiguas, iconos de los hot spots, y un mapa ilustrado en el que se organiza la cartografía sonora.
+                        <br>
+                        <br>
+                        El reto más duro, y más pesado, ha sido la creación, por parte del alumnado, de la propia página web en la que se muestran los resultados obtenidos, utilizando HTML, CSS y JavaScript. Y a su vez, optimizando código para que dichos resultados se muestren correctamente en cientos y miles de dispositivos, además de traer pequeños detalles que facilitan la navegación por la web y agradan al usuario, quedando este satisfacho por la página web.
+                    </div>
+                    <div class="muchotextojaja">
+                        Después de un taller de diseño coorporativo hemos creado la marca “So d’Arrel”, que da nombre a la propia página web.
+                        <br>
+                        <br>
+                        Dentro del mismo proyecto y gracias a la colaboración de las Concejalías de Turismo, Educación y Cultura del Ayuntamiento de El Campello, hemos podido dotar al pueblo con 7 paneles informativos que recogen parte de la información generada, y que mediante un código QR te remite a la misma página WEB con el fin de completar la información expuesta en los mismos.
+                        <br>
+                        <div class="collage">
+                            <img class="fotoembed" alt="Foto 1" type="image/jpg" src="../images/about/About.jpg">
+                            <img class="fotoembed" alt="Foto 1" type="image/jpg" src="../images/about/About(5).jpg">
+                            <img class="fotoembed" alt="Foto 1" type="image/jpg" src="../images/about/About(6).jpg">
+                        </div>
+                        <br>
+                        Visto el interés y la motivación observada en el alumnado, el profesorado participante en el proyecto valoramos de forma muy positiva las diferentes metodologías empleadas, tanto de aprendizaje cooperativo, multidisciplinar y aprendizaje servicio, ya que el alumnado ha sido capaz de entender el proceso necesario para llevar a buen término la realización de una investigación a partir del método científico y sociológico, así como de aunar intereses y aptitudes con un objetivo común. 
+                        <br>
+                    </div>
+                </div>
+                <div>
+                    <a class="subtitlesection">
+                        Agradecimientos
+                    </a>
+                    <div class="credit">
+                        <div class="flexitemtime"> 
+                            <button class="sectioncredits" onclick="theSuperPowerfulOpeningFunctionThatHaveEverExisted(0)">
+                                <div class="button_sub_container">
+                                    <div class="section_ico_buttontimer material-icons-round unselectable">account_balance</div>
+                                    <a>Instituciones</a>
+                                    <div class="section_ico_opener material-icons-round unselectable">expand_more</div>
+                                </div>
+                            </button>
+                            <ul class="list classcenter_content">
+                                <li>
+                                    <img src="../images/about/Logos(0)/n-20-017.jpg" class="logos_list_inst"> 
+                                    <a>Conselleria de Educación, Cultura y Deporte de la GVA</a>
+                                </li>
+                                <li>
+                                    <img src="../images/about/Logos(0)/TURISMO.png" class="logos_list_inst"> 
+                                    <a>Concejalía de Turismo</a>                                
+                                </li>
+                                <li>
+                                    <img src="../images/about/Logos(0)/Educacion.jpg" class="logos_list_inst"> 
+                                    <a>Concejalía de Cultura y Educación</a>
+                                </li>
+                                <li>
+                                    <img src="../images/about/Logos(0)/espacio.png" class="logos_list_inst"> 
+                                    <a>Espacio Inspira</a>
+                                </li>
+                                <li>
+                                    <img src="../images/about/Logos(0)/logo barxell.jpg" class="logos_list_inst"> 
+                                    <a>Colla de Tabals i Dolçaines Barxell d’Alcoi</a>
+                                </li>
+                                <li>
+                                    <img src="../images/about/Logos(0)/museo.jpg" class="logos_list_inst"> 
+                                    <a>Museo del Cáñamo de Callosa de Segura</a>
+                                </li>
+                                <li>
+                                    <img src="../images/about/Logos(0)/CARNET.jpg" class="logos_list_inst"> 
+                                    <a>Museo del Ferrocarril de Torrellano</a>
+                                </li>
+                                <li>
+                                    <img src="../images/about/Logos(0)/AMPA.png" class="logos_list_inst"> 
+                                    <a>AMPA Clot de l'Illot</a>
+                                </li>
+                            </ul>
+                        </div> 
+
+                        <div class="flexitemtime"> 
+                            <button class="sectioncredits" onclick="theSuperPowerfulOpeningFunctionThatHaveEverExisted(1)">
+                                <div class="button_sub_container">
+                                    <div class="section_ico_buttontimer material-icons-round unselectable">people</div>
+                                    <a>Personas</a>
+                                    <div class="section_ico_opener material-icons-round unselectable">expand_more</div>
+                                </div>
+                            </button>
+                            <ul class="list">
+                                <li>emmm... Sí. Me echas un cable copiando?</li>
+                            </ul>
+                        </div>
+
+                        <div class="flexitemtime"> 
+                            <button class="sectioncredits" onclick="theSuperPowerfulOpeningFunctionThatHaveEverExisted(2)">
+                                <div class="button_sub_container">
+                                    <div class="section_ico_buttontimer material-icons-round unselectable">code</div>
+                                    <a>Desarrollo web</a>
+                                    <div class="section_ico_opener material-icons-round unselectable">expand_more</div>
+                                </div>
+                            </button>
+                            <ul class="list">
+                                <li>Web por obra y revisión de Iván Parkhomchyk</li>
+                                <li>Colaboradores Web: Simón Hudec</li>
+                                <li>Colaboradores Web: Teresa Lanuza</li>
+                                <li>Colaboradores Web: Moisés Segura</li>
+                            </ul>
+                        </div>
+
+                        <div class="flexitemtime"> 
+                            <button class="sectioncredits" onclick="theSuperPowerfulOpeningFunctionThatHaveEverExisted(3)">
+                                <div class="button_sub_container">
+                                    <div class="section_ico_buttontimer material-icons-round unselectable">palette</div>
+                                    <a>Ilustraciones</a>
+                                    <div class="section_ico_opener material-icons-round unselectable">expand_more</div>
+                                </div>
+                            </button>
+                            <ul class="list">
+                                <li>Ilustraciones digitales de las localizaciones: Daya Ortega</li>
+                                <li>Iconos de localizaciones: Anna María Crocella</li>
+                                <li>Mapa ilustrado: Virginia Torrejón</li>
+                            </ul>
+                        </div>
+
+                        <div class="flexitemtime"> 
+                            <button class="sectioncredits" onclick="theSuperPowerfulOpeningFunctionThatHaveEverExisted(4)">
+                                <div class="button_sub_container">
+                                    <div class="section_ico_buttontimer material-icons-round unselectable">school</div>
+                                    <a>Alumnos</a>
+                                    <div class="section_ico_opener material-icons-round unselectable">expand_more</div>
+                                </div>
+                            </button>
+                            <ul class="list">
+                                <li>Abre el apatado personas y aplícalo aquí</li>
+                            </ul>
+                        </div>
+
+                        <div class="flexitemtime"> 
+                            <button class="sectioncredits" onclick="theSuperPowerfulOpeningFunctionThatHaveEverExisted(5)">
+                                <div class="button_sub_container">
+                                    <div class="section_ico_buttontimer material-icons-round unselectable">security</div>
+                                    <a>Coordinación</a>
+                                    <div class="section_ico_opener material-icons-round unselectable">expand_more</div>
+                                </div>
+                            </button>
+                            <ul class="list">
+                                <li>Laura Cuenca</li>
+                                <li>Ignacio Pascual</li>
+                            </ul>
+                        </div>
+
+                        <div class="flexitemtime"> 
+                            <button class="sectioncredits" onclick="theSuperPowerfulOpeningFunctionThatHaveEverExisted(6)">
+                                <div class="button_sub_container">
+                                    <div class="section_ico_buttontimer material-icons-round unselectable">book</div>
+                                    <a>Bibliografía</a>
+                                    <div class="section_ico_opener material-icons-round unselectable">expand_more</div>
+                                </div>
+                            </button>
+                            <ul class="list">
+                                <li>Giner i Parodi: <u>A la vora del mar</u></li>
+                                <li>Climent, R. (1995): <u>El Campello , mi pueblo.</u></li>
+                            </ul>
+                        </div>
+
+                        <div class="flexitemtime"> 
+                            <button class="sectioncredits" onclick="theSuperPowerfulOpeningFunctionThatHaveEverExisted(7)">
+                                <div class="button_sub_container">
+                                    <div class="section_ico_buttontimer material-icons-round unselectable">extension</div>
+                                    <a>Recursos empleados</a>
+                                    <div class="section_ico_opener material-icons-round unselectable">expand_more</div>
+                                </div>
+                            </button>
+                            <ul class="list">
+                                <li>
+                                    <a class="linkcredit" href="https://leafletjs.com/">
+                                        <div class="ad_baculum">
+                                            <img class="icon_i" src="https://leafletjs.com/docs/images/favicon.ico" alt="icon">
+                                            <p class="textlink_i">Leaflet.js</p>
+                                        </div>
+                                        <div class="ad_baculum">
+                                            <div class="material-icons-round unselectable ad_populum">
+                                                open_in_new
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="linkcredit" href="https://fonts.google.com/icons">
+                                        <div class="ad_baculum">
+                                            <img class="icon_i" src="https://www.gstatic.com/images/icons/material/apps/fonts/1x/catalog/v5/favicon.svg" alt="icon">
+                                            <p class="textlink_i">Google Fonts</p>
+                                        </div>
+                                        <div class="ad_baculum">
+                                            <div class="material-icons-round unselectable ad_populum">
+                                                open_in_new
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="linkcredit" href="https://github.com/domoritz/leaflet-locatecontrol">
+                                        <div class="ad_baculum">
+                                            <img class="icon_i" src="https://github.githubassets.com/favicons/favicon.svg" alt="icon">
+                                            <p class="textlink_i">Leaflet.Locate</p>
+                                        </div>
+                                        <div class="ad_baculum">
+                                            <div class="material-icons-round unselectable ad_populum">
+                                                open_in_new
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <div class="content_footer">
+            <div class="adpopulum">
+            <div class="falsacausa">
+                <span type="image/svg+xml" class="fluent_footer_logo" alt="logo So D'arrel"></span>
+                <span type="image/svg+xml" class="fluent_footer_logo_clot" alt="I.E.S. Clot de l'Illot"></span>
+            </div>
+            <div class="columns_foo_container">
+                <ul class="column_footer">
+                    <li>Navegación</li>
+                    <li><a href="../index.html">Mapa</a></li>
+                    <li><a href="../invesrigacion/index.html">Investigación</a></li>
+                    <li><a href="../empresas/index.html">Empresas</a></li>
+                </ul>
+                <ul class="column_footer">
+                    <li>Ubicaciones</li>
+                    <li><a href="../astillero/index.html">Astillero</a></li>
+                    <li><a href="../illeta/index.html">Racó de la Illeta</a></li>
+                    <li><a href="../iglesia/index.html">Plaza de la iglesia</a></li>
+                    <li><a href="../trenet/index.html">La estación del trenet</a></li>
+                    <li><a href="../carrer-mar/index.html">Playa Carrer La Mar</a></li>
+                    <li><a href="../gallo/index.html">Gallo Rojo</a></li>
+                    <li><a href="../senda/index.html">Senda</a></li>
+                </ul>
+                <ul class="column_footer">
+                    <li>Sobre nosotros</li>
+                    <li><a href="index.html">Acerca de este proyecto</a></li>
+                    <li><a href="https://github.com/InformaticaEnSuEstadoPuro/so-darrel">Repositorio Git</a></li>
+                    <li><a href="https://www.instagram.com/so_d_arrel/">@so_d_arrel en Instagram</a></li>
+                </ul>
+            </div>
+            
+            </div>
+            <span class="msgfoo unselectable">Hecho en El Campello (2021-2022)</span>
+        </div>
+    </footer>
+    <script src="../js/about.js" type="text/javascript"></script>
+</body> 
