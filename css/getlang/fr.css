@@ -1,0 +1,85 @@
+#flagES{
+    background: url(../../images/flags/bandera-es.jpg);
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover; 
+    background-position: center;
+}
+#flagES::before,
+#flagES:hover::before,
+#flagES:hover:active::before {
+    display: none;
+}
+
+#flagVA{
+    background: url(../../images/flags/bandera-vl.png);
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover; 
+    background-position: center;
+}
+#flagEN{
+    background: url(../../images/flags/bandera-en.png);
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover; 
+    background-position: center;
+}
+
+#flagFR{
+    background: url(../../images/flags/bandera-fr.svg);
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover; 
+    background-position: center;
+    margin-right: 0;
+}
+#flagFR::before {
+    position: absolute;
+    background: #0366D6 center;
+    content: "";
+    margin: 23px 8px 0 8px;
+    width: 16px;
+    height: 3px;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    -moz-transition: .2s;
+    transition: .2s;
+}
+#flagFR:hover::before {
+    background: #0366D6 center;
+    width: 18px;
+    margin: 23px 7px 0 7px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    -moz-transition: .2s;
+    transition: .2s;
+}
+#flagFR:hover:active::before {
+    background: #004faa center;
+    width: 14px;
+    margin: 23px 9px 0 9px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    -moz-transition: .2s;
+    transition: .2s;
+}
+
+@media screen and (max-width: 344px) {
+    #flagES{
+        display: unset;
+    }
+    #flagFR{
+        display: none;
+    }
+    #flagEN{
+        margin: 0;
+    }
+}

@@ -1,0 +1,9 @@
+html{
+    --icon_storage: url(../../images/map/astillero.svg);
+}
+.mini_ico {
+    background: var(--icon_storage);
+}
+.useAsIco{
+    background: var(--icon_storage);
+}

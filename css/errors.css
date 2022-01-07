@@ -6,13 +6,34 @@ input,
 textarea,
 button,
 select,
-a {
+a,
+div,
+nav,
+section,
+li,
+span {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+body:not(.user-tab-mode) button:focus,
+body:not(.user-tab-mode) input:focus,
+body:not(.user-tab-mode) select:focus,
+body:not(.user-tab-mode) div:focus,
+body:not(.user-tab-mode) a:focus,
+body:not(.user-tab-mode) textarea:focus,
+body:not(.user-tab-mode) nav:focus,
+body:not(.user-tab-mode) section:focus,
+body:not(.user-tab-mode) li:focus,
+body:not(.user-tab-mode) span:focus {
+  outline: none;
+}
 
-/*
-* Prefixed by https://autoprefixer.github.io
-*/
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 .TabIndexing {
     outline:none;

@@ -5,8 +5,25 @@ input,
 textarea,
 button,
 select,
-a {
+a,
+div,
+nav,
+section,
+li,
+span {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body:not(.user-tab-mode) button:focus,
+body:not(.user-tab-mode) input:focus,
+body:not(.user-tab-mode) select:focus,
+body:not(.user-tab-mode) div:focus,
+body:not(.user-tab-mode) a:focus,
+body:not(.user-tab-mode) textarea:focus,
+body:not(.user-tab-mode) nav:focus,
+body:not(.user-tab-mode) section:focus,
+body:not(.user-tab-mode) li:focus,
+body:not(.user-tab-mode) span:focus {
+  outline: none;
 }
 
 .unselectable {
@@ -787,7 +804,7 @@ body{
     -o-transition: 0.2s;
 }
 
-/*win7windowstyle*/
+/*window style*/
 .ineritwindow{
     display: none;
     margin: auto;
@@ -991,17 +1008,18 @@ body{
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-radius: 50%;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 6px;
+    width: 40px;
     position: relative;
     padding: 0;
     border: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     background-color: #e94b4e;
     color: transparent;
     border: 1px solid rgba(102, 10, 28, 0.418);

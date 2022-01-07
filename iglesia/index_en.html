@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" translate="no">
+<html lang="en" translate="no">
     <!-- Este sitio requiere JavaScript para funcionar correctamente -->
     <!-- Este sitio puede no estar optimizado para usarse en ciertos navegadores. Ej: IE o edge legacy -->
 <head>
@@ -33,26 +33,26 @@
 
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://sodarrel.com"/>
-  <meta property="og:title" content="Gallo Rojo — So d'arrel"/>
+  <meta property="og:title" content="Church Square — So d'arrel"/>
   <meta property="og:site_name" content="So d'arrel"/>
-  <meta property="og:locate" content="es_ES"/>
+  <meta property="og:locate:alternate" content="es_ES"/>
   <meta property="og:locale:alternate" content="ca_AD"/>
   <meta property="og:locale:alternate" content="fr_FR"/>
   <meta property="og:locale:alternate" content="ca_ES"/>
   <meta property="og:locale:alternate" content="en_US"/>
-  <meta property="og:locale:alternate" content="en_UK"/>
-  <meta property="og:description" content="Este sitio web permite experimentar el pasado sonoro de la población de El Campello a través de una cartografía."/>
-  <meta property="og:image" content="https://sodarrel.com/images/preview/gallorojo.png"/>
+  <meta property="og:locale" content="en_UK"/>
+  <meta property="og:description" content="This website allows you to experience the sound past of the town of El Campello through a cartography."/>
+  <meta property="og:image" content="https://sodarrel.com/images/preview/iglesiaweb.png"/>
 
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:url" content="https://sodarrel.com"/>
-  <meta name="twitter:title" content="Gallo Rojo — So d'arrel"/>
-  <meta name="twitter:description" content="Este sitio web permite experimentar el pasado sonoro de la población de El Campello a través de una cartografía."/>
-  <meta name="twitter:image" content="https://sodarrel.com/images/preview/gallorojo.png"/>
+  <meta name="twitter:title" content="Church Square — So d'arrel"/>
+  <meta name="twitter:description" content="This website allows you to experience the sound past of the town of El Campello through a cartography."/>
+  <meta name="twitter:image" content="https://sodarrel.com/images/preview/iglesiaweb.png"/>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover,user-scalable = no"/>
-  <meta name="title" content="Gallo Rojo — So d'arrel"/>
-  <meta name="description" content="Este sitio web permite experimentar el pasado sonoro de la población de El Campello a través de una cartografía."/>
+  <meta name="title" content="Church Square — So d'arrel"/>
+  <meta name="description" content="This website allows you to experience the sound past of the town of El Campello through a cartography."/>
   <meta name="author" content="IES Clot de l'Illot"/>
   <meta name="theme-color" content="#EFD93C"/>
   <meta name="aplication-name" content="So d'arrel"/>
@@ -60,16 +60,19 @@
       <!-- Trick to disable msedge translator at all -->
       <meta name="google" content="notranslate"/> 
 
-  <title>Gallo Rojo — So d'arrel</title>
+  <title>Church Square — So d'arrel</title>
   <link rel="manifest" href="../images/favicon/manifest.webmanifest"/>
   <link rel="stylesheet" href="../css/campello.css"/>
+  <link rel="stylesheet" href="../css/getlang/en.css"/>
+  <link rel="stylesheet" href="../css/mini_ico_public/iglesia.css"/>
+  <link rel="stylesheet" href="../css/mini_fix.css"/>
 </head>
 
 <body>
         <div class="sidebar_container" id="sidebar_containerId" onclick="closesidebar()"></div>
         <div id="sidebar_content" tabindex="-1" role="navigation">
                 <div class="sidebar_header">
-                    <button tabindex="-1" aria-label="Cerrar el menú lateral" title="Cerrar el menú lateral" class="closeburger burger_menu" onclick="closesidebar()">
+                    <button tabindex="-1" aria-label="Close the side navigation" title="Close the side navigation" class="closeburger burger_menu" onclick="closesidebar()">
                         <div class="material-icons-round unselectable">menu</div>
                     </button>
                     <li class="lilogoli logoMenuLateral unselectable"><span type="image/svg+xml" class="logo unselectable" alt="logo So D'arrel"></span></li>
@@ -77,58 +80,60 @@
 
             <div class="BigSideContainer">
                 <section class="sidebar_main nonsection">
-                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Volver al mapa de campello" title="Volver al mapa" href="../index.html">
+                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Return to El Campello map" title="Return to Map" href="../index_en.html">
                         <div class="material-icons-round unselectable icoWidth">map</div>
-                        <p translate="yes">Ir al mapa</p>
+                        <p translate="yes">Return to Map</p>
                     </a>
-                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Investigación" title="Investigación" href="../investigacion/index.html">
+                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Research" title="Research" href="investigacion/index_en.html">
                         <div class="material-icons-round unselectable icoWidth">biotech</div>
-                        <p translate="yes">Investigación</p>
+                        <p lang="en" translate="yes">Research</p>
                     </a>
-                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Empresas" translate="yes" title="Empresas" href="../empresas/index.html">
+                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Companies" translate="yes" title="Companies" href="empresas/index_en.html">
                         <div class="material-icons-round unselectable icoWidth" translate="no">business</div>
-                        <p lang="es" translate="yes">Empresas</p>
+                        <p lang="en" translate="yes">Companies</p>
                     </a>
                 </section>
                 <div class="spaceDiplayFlex"></div>
-                <section class="sidebar_footer nonsection" aria-label="Saber más sobre el proyecto">
-                    <p class="subtitleSection unselectable" translate="yes">Más sobre nosotros</p>
-                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Acerca de So d'arrel" title="Acerca de So d'arrel" href="../about/index.html">
+                <section class="sidebar_footer nonsection" aria-label="About us">
+                    <p class="subtitleSection unselectable" translate="yes">
+                        About us
+                    </p>
+                    <a tabindex="-1" class="sidebar_common_txt" aria-label="About So d'arrel" title="About So d'arrel" href="about/index_en.html">
                         <div class="material-icons-round unselectable icoWidth">info</div>
-                        <p translate="yes">Acerca de So d'arrel</p>
+                        <p lang="en" translate="yes">About So d'arrel</p>
                     </a>
-                    <a tabindex="-1" class="instagramButton" aria-label="@so_d_arrel en Instagram" title="@so_d_arrel" href="https://www.instagram.com/so_d_arrel/">
+                    <a tabindex="-1" class="instagramButton" aria-label="@so_d_arrel on Instagram" title="@so_d_arrel" href="https://www.instagram.com/so_d_arrel/">
                         <div class="fa fa-instagram ico_insta icoWidth"></div>
-                        <p translate="yes">@so_d_arrel en Instagram</p>
+                        <p lang="en" translate="yes">@so_d_arrel on Instagram</p>
                     </a>
                 </section>
             </div>
-        </div>
-    
-    <nav tabindex="1" aria-label="Barra superior de navegación">
+        </div>    
+
+    <nav tabindex="1" aria-label="Top navigation bar">
         <div>
-            <button tabindex="1" aria-label="Abrir el menú lateral" title="Menú lateral" class="burger_menu" onclick="opensidebar()">
+            <button tabindex="1" aria-label="Open the side navigation" title="Side navigation" class="burger_menu" onclick="opensidebar()">
                 <div class="material-icons-round unselectable">menu</div>
             </button>
-            <a tabindex="2" aria-label="Volver al sitio web del mapa" role="link" title="Volver al mapa" class="homebutton unselectable" href="../index.html">
+            <a tabindex="2" aria-label="Return to Map Website" role="link" title="Return to Map" class="homebutton unselectable" href="../index_en.html">
                 <div class="material-icons-round unselectable">map</div>
                 <span type="image/svg+xml" class="logo lilogo unselectable" alt="logo So D'arrel"></span>
             </a>
-            <a tabindex="4" aria-label="Investigación" title="Investigación" href="../investigacion/index.html">
+            <a tabindex="4" aria-label="Research" title="Research" href="investigacion/index_en.html">
                 <div class="material-icons-round unselectable">biotech</div>
-                <p class="iconos_textos" translate="yes">Investigación</p>
+                <p class="iconos_textos" translate="yes">Research</p>
             </a>
-            <a tabindex="5"   aria-label="Empresas" title="Empresas" href="../empresas/index.html">
+            <a tabindex="5"   aria-label="Companies" title="Companies" href="empresas/index_en.html">
                 <div class="material-icons-round unselectable">business</div>
-                <p class="iconos_textos" translate="yes">Empresas</p>
+                <p class="iconos_textos" translate="yes">Companies</p>
             </a>
         </div>
         <div>
-            <a tabindex="6" aria-label="Acerca de So d'arrel" title="Acerca de So d'arrel" href="../about/index.html">
+            <a tabindex="6" aria-label="About So d'arrel" title="About So d'arrel" href="about/index_en.html">
                 <div class="material-icons-round unselectable">info</div>
-                <p class="iconos_textos" translate="yes">Acerca</p>
+                <p class="iconos_textos" translate="yes">About</p>
             </a>
-            <div tabindex="7" aria-label="Cambiar el idioma de la web. Change language to show" class="flagroup ">
+            <div tabindex="7" aria-label="Change language to show" class="flagroup">
                 <a tabindex="7" class="lista " id="flagES" href="index.html" title="Español"></a>
                 <a tabindex="7" class="lista " id="flagVA" href="index_va.html" title="Valencià"></a> 
                 <a tabindex="7" class="lista " id="flagEN" href="index_en.html" title="English"></a>
@@ -143,11 +148,11 @@
         <div class="backopacitier"></div>
         <div class="maincentertitle">
             <div class="box_title">
-                <div class="mini_ico unselectable" alt="Imagen ilustrativa"></div>
-                <p class="ptitle"><b> Gallo Rojo </b></p>
-                <button tabindex="8" aria-label="Reproducir vídeo sobre cómo sonaba Gallo Rojo" class="pbutton unselectable" translate="yes" onclick="CmdOpenVideo()">
+                <div class="mini_ico unselectable" alt="Location icon"></div>
+                <p class="ptitle"><b> Church Square </b></p>
+                <button tabindex="8" aria-label="Play video of the sonorous past of the church square" class="pbutton unselectable" translate="yes" onclick="CmdOpenVideo()">
                     <div class="material-icons-round unselectable" translate="no">play_arrow</div>
-                    Reproducir
+                    Play
                 </button>
             </div>
         </div>
@@ -162,20 +167,20 @@
                     </div>
 
                     <div class="title-bar-controls">
-                        <button tabindex="10" aria-label="Cerrar y parar el vídeo" title="Cerrar" class="closethewin material-icons-round unselectable" onclick="CmdCloseVideo()">
+                        <button tabindex="10" aria-label="Close and Stop Video" title="Close" class="closethewin material-icons-round unselectable" onclick="CmdCloseVideo()">
                             close
                         </button>
                     </div>
                 </div>
                 <div class="windowplay">
-                    <video tabindex="9" role="none" class="video_play" id="video_play" controls playsinline src="video/Gallo rojo ES.mp4" onended="CmdCloseVideo()"></video>
+                    <video tabindex="9" role="none" class="video_play" id="video_play" controls playsinline src="" onended="CmdCloseVideo()"></video>
                 </div>
             </div>
 
-            <button tabindex="10" aria-label="Cerrar y parar el vídeo" class="Xbutton_mobile" id="Xbutton" onclick="CmdCloseVideo()">
+            <button tabindex="10" aria-label="Close and Stop Video" class="Xbutton_mobile" id="Xbutton" onclick="CmdCloseVideo()">
                 <div class="contentXmobile">
                     <div class="material-icons-round unselectable Xbutton">close</div>
-                    <p class="CancelButton unselectable" translate="yes">Cerrar vídeo</p>
+                    <p class="CancelButton unselectable" translate="yes">Close</p>
                 </div>
             </button>
         </div>
@@ -185,5 +190,5 @@
             <img src="../images/logos/logo-clot-light.svg" type="image/svg+xml" class="logo-clot unselectable" alt="Logo I.E.S. CLOT DE L'ILLOT">
         </div>
     </footer>
-    <script src="../js/locations_lang/gallo/campellolocat.js" type="text/javascript"></script>
+    <script src="../js/locations_lang/iglesia/campellolocat_en.js" type="text/javascript"></script>
 </body>

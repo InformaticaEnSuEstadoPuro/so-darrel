@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" translate="no">
+<html lang="ca" translate="no">
     <!-- Este sitio requiere JavaScript para funcionar correctamente -->
     <!-- Este sitio puede no estar optimizado para usarse en ciertos navegadores. Ej: IE o edge legacy -->
 <head>
@@ -39,26 +39,26 @@
 
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://sodarrel.com"/>
-  <meta property="og:title" content="Inicio — So d'arrel"/>
+  <meta property="og:title" content="Inici — So d'arrel"/>
   <meta property="og:site_name" content="So d'arrel"/>
-  <meta property="og:locate" content="es_ES"/>
+  <meta property="og:locate:alternate" content="es_ES"/>
   <meta property="og:locale:alternate" content="ca_AD"/>
   <meta property="og:locale:alternate" content="fr_FR"/>
-  <meta property="og:locale:alternate" content="ca_ES"/>
+  <meta property="og:locale" content="ca_ES"/>
   <meta property="og:locale:alternate" content="en_US"/>
   <meta property="og:locale:alternate" content="en_UK"/>
-  <meta property="og:description" content="Este sitio web permite experimentar el pasado sonoro de la población de El Campello a través de una cartografía."/>
+  <meta property="og:description" content="Aquest lloc web permet experimentar el passat sonor de la població de El Campello a través d'una cartografia."/>
   <meta property="og:image" content="https://sodarrel.com/images/preview/map.png"/>
 
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:url" content="https://sodarrel.com"/>
-  <meta name="twitter:title" content="Inicio - So d'arrel"/>
-  <meta name="twitter:description" content="Este sitio web permite experimentar el pasado sonoro de la población de El Campello a través de una cartografía."/>
+  <meta name="twitter:title" content="Inici - So d'arrel"/>
+  <meta name="twitter:description" content="Aquest lloc web permet experimentar el passat sonor de la població de El Campello a través d'una cartografia."/>
   <meta name="twitter:image" content="https://sodarrel.com/images/preview/map.png"/>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"/>
-  <meta name="title" content="Inicio — So d'arrel"/>
-  <meta name="description" content="Este sitio web permite experimentar el pasado sonoro de la población de El Campello a través de una cartografía."/>
+  <meta name="title" content="Inici — So d'arrel"/>
+  <meta name="description" content="Aquest lloc web permet experimentar el passat sonor de la població de El Campello a través d'una cartografia."/>
   <meta name="author" content="IES Clot de l'Illot"/>
   <meta name="theme-color" content="#EFD93C"/>
   <meta name="aplication-name" content="So d'arrel"/>
@@ -66,16 +66,17 @@
     <!-- Trick to disable msedge translator at all -->
     <meta name="google" content="notranslate"/> 
 
-  <title>Inicio — So d'arrel</title>
+  <title>Inici — So d'arrel</title>
   <link rel="manifest" href="images/favicon/manifest.webmanifest"/>
-  <link rel="stylesheet" href="css/map.css"/>  
+  <link rel="stylesheet" href="css/map.css"/>
+  <link rel="stylesheet" href="css/getlang/va.css"/>
 </head>
 
 <body>
         <div class="sidebar_container" id="sidebar_containerId" onclick="closesidebar()"></div>
         <div id="sidebar_content" tabindex="-1" role="navigation">
                 <div class="sidebar_header">
-                    <button tabindex="-1" aria-label="Cerrar el menú lateral" title="Cerrar el menú lateral" class="closeburger burger_menu" onclick="closesidebar()">
+                    <button tabindex="-1" aria-label="Tancar el menú lateral" title="Tancar el menú lateral" class="closeburger burger_menu" onclick="closesidebar()">
                         <div class="material-icons-round unselectable">menu</div>
                     </button>
                     <li class="lilogo logoMenuLateral unselectable"><span src="images/logos/logo.svg" type="image/svg+xml" class="logo unselectable" alt="logo So D'arrel"></span></li>
@@ -83,51 +84,53 @@
 
             <div class="BigSideContainer">
                 <section class="sidebar_main nonsection">
-                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Investigación" title="Investigación" href="investigacion/index.html">
+                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Investigació" title="Investigació" href="investigacion/index_va.html">
                         <div class="material-icons-round unselectable icoWidth">biotech</div>
-                        <p translate="yes">Investigación</p>
+                        <p lang="ca" translate="yes">Investigació</p>
                     </a>
-                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Empresas" translate="yes" title="Empresas" href="empresas/index.html">
+                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Empreses" translate="yes" title="Empreses" href="empresas/index_va.html">
                         <div class="material-icons-round unselectable icoWidth" translate="no">business</div>
-                        <p lang="es" translate="yes">Empresas</p>
+                        <p lang="ca" translate="yes">Empreses</p>
                     </a>
                 </section>
                 <div class="spaceDiplayFlex"></div>
-                <section class="sidebar_footer nonsection" aria-label="Saber más sobre el proyecto">
-                    <p class="subtitleSection unselectable" translate="yes">Más sobre nosotros</p>
-                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Acerca de So d'arrel" title="Acerca de So d'arrel" href="about/index.html">
+                <section class="sidebar_footer nonsection" aria-label="Més sobre nosaltres">
+                    <p class="subtitleSection unselectable" translate="yes">
+                        Més sobre nosaltres
+                    </p>
+                    <a tabindex="-1" class="sidebar_common_txt" aria-label="Sobre So d'arrel" title="Sobre So d'arrel" href="about/index_va.html">
                         <div class="material-icons-round unselectable icoWidth">info</div>
-                        <p translate="yes">Acerca de So d'arrel</p>
+                        <p lang="ca" translate="yes">Sobre So d'arrel</p>
                     </a>
                     <a tabindex="-1" class="instagramButton" aria-label="@so_d_arrel en Instagram" title="@so_d_arrel" href="https://www.instagram.com/so_d_arrel/">
                         <div class="fa fa-instagram ico_insta icoWidth"></div>
-                        <p translate="yes">@so_d_arrel en Instagram</p>
+                        <p lang="ca" translate="yes">@so_d_arrel en Instagram</p>
                     </a>
                 </section>
             </div>
         </div>
     
-    <nav tabindex="1" aria-label="Barra superior de navegación">
+    <nav tabindex="1" aria-label="Barra superior de navegació">
         <div>
-            <button tabindex="1" aria-label="Abrir el menú lateral" title="Menú lateral" class="burger_menu" onclick="opensidebar()">
+            <button tabindex="1" aria-label="Obrir el menú lateral" title="Menú lateral" class="burger_menu" onclick="opensidebar()">
                 <div class="material-icons-round unselectable">menu</div>
             </button>
             <span aria-label="logo So D'arrel" role="contentinfo" tabindex="2" type="image/svg+xml" class="logo lilogo unselectable" alt="logo So D'arrel"></span>
-            <a tabindex="4" aria-label="Investigación" title="Investigación" href="investigacion/index.html">
+            <a tabindex="4" aria-label="Investigació" title="Investigació" href="investigacion/index_va.html">
                 <div class="material-icons-round unselectable">biotech</div>
-                <p class="iconos_textos" translate="yes">Investigación</p>
+                <p class="iconos_textos" translate="yes">Investigació</p>
             </a>
-            <a tabindex="5"   aria-label="Empresas" title="Empresas" href="empresas/index.html">
+            <a tabindex="5"   aria-label="Empreses" title="Empreses" href="empresas/index_va.html">
                 <div class="material-icons-round unselectable">business</div>
-                <p class="iconos_textos" translate="yes">Empresas</p>
+                <p class="iconos_textos" translate="yes">Empreses</p>
             </a>
         </div>
         <div>
-            <a tabindex="6"   aria-label="Acerca de So d'arrel" title="Acerca de So d'arrel" href="about/index.html">
+            <a tabindex="6" aria-label="Sobre So d'arrel" title="Sobre So d'arrel" href="about/index_va.html">
                 <div class="material-icons-round unselectable">info</div>
-                <p class="iconos_textos" translate="yes">Acerca</p>
+                <p class="iconos_textos" translate="yes">Sobre So d'arrel</p>
             </a>
-            <div tabindex="7" aria-label="Cambiar el idioma de la web. Change language to show" class="flagroup ">
+            <div tabindex="7" aria-label="Canviar l'idioma de la web. Change language to show" class="flagroup">
                 <a tabindex="7" class="lista " id="flagES" href="index.html" title="Español"></a>
                 <a tabindex="7" class="lista " id="flagVA" href="index_va.html" title="Valencià"></a> 
                 <a tabindex="7" class="lista " id="flagEN" href="index_en.html" title="English"></a>
@@ -137,7 +140,7 @@
     </nav>
 
     <main>
-        <div tabindex="8" aria-label="Mapa de El Campello con 7 Ubicaciones" id="mapacampello" class="unselectable">
+        <div tabindex="8" aria-label="Mapa de El Campello amb 7 Ubicacions" id="mapacampello" class="unselectable">
             <div class="maptitle" id="expectmaptitle">
                 <div class="main_title" translate="yes">
                     <div class="material-icons-round unselectable" translate="no">map</div>
@@ -148,17 +151,17 @@
         
         <div class="musiccontainer">
             <div class="music_player" tabindex="9" aria-label="Reproductor de música">
-                <button tabindex="9" title="Reproducir/Pausar" id="play" aria-label="Reproducir o aturar la melodia">
+                <button tabindex="9" title="Reproduir/Aturar" id="play" aria-label="Reprodueix o atura la melodia">
                     <div class="material-icons-round unselectable" id="playico">play_arrow</div>
                 </button>
-                <button tabindex="9" title="Silenciar/Desilenciar" id="mute" aria-label="Silenciar o desilenciar la melodía" onclick="muteEvent()">
+                <button tabindex="9" title="Silenciar/Deixar de silenciar" id="mute" aria-label="Silencia o Deixa de silenciar la melodia" onclick="muteEvent()">
                     <div class="material-icons-round unselectable" id="volume_ico">volume_up</div>
                 </button>
 
                 <div class="level_volume_container">
                     <input tabindex="9" id="volume" oninput="volume()" class="volume" ontouchmove="volume();" type="range" min="0" value="100" step="1" 
                     onclick="LastVolume()" ontouchstart="LastVolume(); volume()" ontouchend="volume(); LastVolume()"
-                    aria-label="Sube o baja el volumen a la melodía" title="Sube o baja el volumen a la melodía">
+                    aria-label="Puja o baixa el volum a la melodia" title="Puja o baixa el volum a la melodia">
                 </div>
             </div>
             <audio loop id="audio-lola" onpause="pauseMusic()" onplaying="playMusic()">
@@ -178,5 +181,5 @@
           <div class="wave wave4"></div>
         </section>
     </footer>
-    <script src="js/map.js" type="text/javascript"></script>
+    <script src="js/map_lang/map_va.js" type="text/javascript"></script>
 </body>
