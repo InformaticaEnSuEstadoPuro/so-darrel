@@ -59,7 +59,7 @@ body{
 }
 
 #backgrounT{
-    background: hsl(0, 80%, 50%);
+    background: #393b3a;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -70,10 +70,10 @@ body{
       -o-animation-name: opacity_thing;
 
          animation-name: opacity_thing;
-    -webkit-animation-duration: 10s;
-       -moz-animation-duration: 10s;
-         -o-animation-duration: 10s;
-            animation-duration: 10s;
+    -webkit-animation-duration: 9s;
+       -moz-animation-duration: 9s;
+         -o-animation-duration: 9s;
+            animation-duration: 9s;
  -webkit-animation-iteration-count: 1;
     -moz-animation-iteration-count: 1;
       -o-animation-iteration-count: 1;
@@ -85,30 +85,29 @@ body{
 }
 
 @-webkit-keyframes opacity_thing {
-    0%   {opacity: 0.1;}
-    100% {opacity: 1;}
+    0%   {background: #f1f0f0;}
+    100% {background: #393b3a;}
 }
 
 @-moz-keyframes opacity_thing {
-    0%   {opacity: 0.1;}
-    100% {opacity: 1;}
+    0%   {background: #f1f0f0;}
+    100% {background: #393b3a;}
 }
 
 @-o-keyframes opacity_thing {
-    0%   {opacity: 0.1;}
-    100% {opacity: 1;}
+    0%   {background: #f1f0f0;}
+    100% {background: #393b3a;}
 }
 
 @keyframes opacity_thing {
-    0%   {opacity: 0.1;}
-    100% {opacity: 1;}
+    0%   {background: #f1f0f0;}
+    100% {background: #393b3a;}
 }
 
 .logo{
     height: 32px;
 }
-
-#content_error{
+main{
     position: absolute;
     width: 300px;
     padding: 10px;
@@ -142,62 +141,34 @@ a {
     font-family: Planner;
 }
 
-#causecode{
-    font-size: 40px;
-    margin-bottom: 5px;
+.t_title{
     width: 100%;
+    /* margin-bottom: 15px; */
 }
-
-#message {
+h2{
+    font-size: 24px;
+    padding: 0;
+    margin: 10px 0 0 0;
     font-family: monospace;
-    padding: 6px;
-    background: #2A2B33;
-    color:#c5c8d4;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    margin-top: 10px;
+    text-align: left;
 }
-
-#date_console{
-    font-family: monospace;
-    color:#7b7d86;
-    font-size: 11px;
+h4{
+    font: 15px monospace;
+    color: #3b3b3b;
+    margin: 5px 0 5px 0;
 }
-
-#txt_error{
-    font-family: monospace;
-}
-
-.tip{
-    font-family: monospace;
-    color: #56635D;
-}
-.error{
-    color: #DF6D6D;
-}
-.error_title{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
+.option-title-txt {
+    margin: 24.23px 0 3.14px 0;
+    padding: 0;
+    font-family: Planner;
     display: flex;
-    width: 100%;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
 }
-.icostyle{
-    color:#E2AD3C;
+.TabIndexing{
+    cursor: pointer;
 }
+
 
 .button{
     display: -webkit-inline-box;
@@ -233,7 +204,7 @@ a {
         color ease 0.1s;
 }
 
-.button:nth-child(4){
+.button:last-child{
     margin-bottom: 0;
 }
 
@@ -300,14 +271,17 @@ a {
     min-height: 17.5px; 
 }
 .lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     padding: 0;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     -moz-transition: 0.2s;
     transition: 0.2s;
-    width: 28px; 
-    height: 17.5px; 
+    width: 28px;
+    height: 17.5px;
     margin-right: 7px;
     border-radius: 2px;
 }
@@ -317,18 +291,37 @@ a {
     src: url(Planer-Regular.ttf);
 }
 
-@media screen and (max-width: 300px){
-    #content_error{
+@media screen and (max-width: 350px){
+    main{
         width: 200px;
     }
     #options{
         margin-top:8px;
         width: 185px;
     }
+    h2{
+        font-size: 17px;
+        margin: 0;
+    }
+    .option-title-txt {
+        display: none;
+    }
+    .button{
+        width: 186px;
+    }
+    .txt_op{
+        font-size: 14px;
+    }
+    h4{
+        margin: 5px 0 0 0;
+    }
+    .logo {
+        height: 25px;
+    }
 }
 
 @media screen and (max-height: 444px){
-    #content_error{
+    main{
         width: 500px;
         display: -webkit-box;
         display: -webkit-flex;
@@ -343,57 +336,59 @@ a {
             -ms-flex-direction: row;
                 flex-direction: row;
     }
-    #message{
-        width: 230px;
+    #main{
+        width: auto;
     }
-    #options{
-        margin-top: 0;
-        margin-left: 12px;
-        width: 230px;
+    #options {
+        margin: 0;
+        width: 228px;
     }
-    .button{
-        width: 100%;
+    .button {
+        width: 200px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .option-title-txt{
+        display: none;
     }
 }
 
 @media screen and (max-height: 230px){
-    #options{
+    #main{
         display:none;
     }
-    #message{
-        width: unset
-    }
-    #content_error{
+    main{
         width: 300px;
     }
-    .error_title{
-        display: none;
+    #options{
+        margin: 0;
+        width: 94%;
     }
-    #causecode{
-        font-size: 23px;
+    .button {
+        width: 100%;
     }
 }
 
 @media screen and (max-height: 480px) and (max-width: 530px){
-    #options{
+    #main{
         display:none;
     }
-    #message{
-        width: unset
-    }
-    #content_error{
+    main{
         width: 300px;
     }
-    .error_title{
-        display: none;
+    #options{
+        margin: 0;
+        width: 93%;
     }
-    #causecode{
-        font-size: 23px;
+    .button {
+        width: 100%;
     }
+
 }
 
 @media screen and (max-height: 480px) and (max-width: 500px){
-    #content_error {
+    main {
         width: 182px;
     }
 }

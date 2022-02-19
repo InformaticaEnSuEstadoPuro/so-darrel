@@ -2202,3 +2202,7 @@ nav > div{
     margin-right: env(safe-area-inset-right);
     margin-left: env(safe-area-inset-left);
 }
+
+#flagVA, #flagEN, #flagFR{
+    display: none;
+}
